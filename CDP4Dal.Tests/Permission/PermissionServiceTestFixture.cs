@@ -1,5 +1,4 @@
-﻿#region Copyright
-// --------------------------------------------------------------------------------------------------------------------
+﻿// --------------------------------------------------------------------------------------------------------------------
 // <copyright file="PermissionServiceTestFixture.cs" company="RHEA System S.A.">
 //    Copyright (c) 2015-2019 RHEA System S.A.
 //
@@ -22,7 +21,6 @@
 //    Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
-#endregion
 
 namespace CDP4Dal.Tests.Permission
 {
@@ -452,6 +450,13 @@ namespace CDP4Dal.Tests.Permission
             Assert.IsFalse(this.permissionService.CanWrite(this.elementDef));
             Assert.IsFalse(this.permissionService.CanWrite(this.iteration));
             Assert.IsFalse(this.permissionService.CanWrite(ClassKind.ElementDefinition, this.iteration));
+        }
+
+        [Test]
+        public void Verify_that_with_default_permissions_can_write_NaturalLanguage()
+        {
+            Assert.That(this.permissionService.CanWrite(ClassKind.NaturalLanguage, this.sitedir), Is.True);
+
         }
     }
 }
