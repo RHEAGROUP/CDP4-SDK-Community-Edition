@@ -1,0 +1,15 @@
+{
+  "ServerUri": "https://sonarcloud.io/",
+  "Organization": {
+    "Key": "rheagroup",
+    "Name": "RHEAGROUP"
+  },
+  "ProjectKey": "RHEAGROUP_CDP4-SDK-Community-Edition",
+  "ProjectName": "CDP4-SDK-Community-Edition",
+  "Profiles": {
+    "CSharp": {
+      "ProfileKey": "AXMPxM10HbgeRajrR6Du",
+      "ProfileTimestamp": "2020-07-02T13:49:13Z"
+    }
+  }
+}
